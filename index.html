@@ -6,19 +6,51 @@
     <title>blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .my-link-style:hover{
+            text-decoration: underline 1px solid white;
+        }
+    </style>
     
 </head>
 <body>
     <div class="container">
-        <header class="bg-primary text-white py-4 textstart text-md-center">
-            <h1>Study With Atom</h1>
+        <!-- <header class="bg-primary">
+            <div class="row">
+                <div class="col-lg-5 m-auto">
+                    <h1 class="text-white text-center mb-0 py-2">Study With Atom</h1>
+                </div>
+                <div class="col-lg-7">
+                    <ul class="nav justify-content-center fs-5 py-3">
+                        <li class="nav-item"><a class="my-link-style text-white nav-link" href="#">Home</a></li>
+                        <li class="my-link-style nav-item"><a class="text-white nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="text-white nav-link" href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header> -->
+        <header class="mb-5">
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top px-4 ">
+                <a href="#" class="navbar-brand">
+                    <img src="download (5).jpg" alt="logo" style="width: 50px; " class="rounded-circle">
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto fs-5 py-3">
+                       <li class="nav-item"><a class="nav-link active" href="#" >Home</a></li>
+                       <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Review</a></li>
+                    </ul>
+               </div>
+            </nav>
         </header>
 
         <main>
             
-            <div class="service-section text-start text-md-center py-4 bg-light">
-                <div>
-                    <h2 class="fw-bolder">Service</h2>
+            <div class="service-section text-start text-md-center py-4 bg-light ">
+                <div class="mt-5">
+                    <h3 class="fw-bolder">Service</h3>
                 </div>
                 <div class="row text-left text-md-center">
                     <div class="col-12 col-md-6 col-lg-3 ">
@@ -48,15 +80,27 @@
                 </div>
             </div>
 
-
-            <div class="about-section bg-light my-5 m-5">
+<!-- -----------about section start here-------- -->
+            <div class="about-section bg-light my-5 ">
                 <div class="row">
                     <div class="img col-lg-4 col-sm-12 m-sm-3 m-md-2 m-lg-5 p-md-5 p-lg-5 text-center my-sm-5 text-md-center">
                         <img class="rounded-circle border border-secondary img-fluid " src="download (7).jpg" alt="">
                     </div>
-                    <div class="about col-md-6 col-sm-12 py-5 px-3 px-lg-2 py-lg-5 m-sm-3 " >
-                        <h1 class="">About Me</h1>
-                        <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dolores blanditiis quasi voluptas totam eveniet, quo vitae deserunt id, ipsam cum unde, veritatis voluptates odit libero illo dolorum modi eos?</p>
+                    <div class="about col-lg-6 col-sm-12 py-5 px-3 px-lg-2 py-lg-5 m-sm-3 " >
+                        <h3 class="fw-bold">About Me</h3>
+                        <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dolores blanditiis veritatis voluptates odit libero illo dolorum modi eos?</p>
+                        <a class="d-block" href="#demo" data-bs-toggle="collapse">Learn more</a>
+                        <div id="demo" class="collapse">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis a dolorum labore doloribus perspiciatis natus vel error deleniti, sint, corporis illo! Repellat quasi neque similique fuga iusto, consequuntur obcaecati!</p>
+                        </div>
+
+                        <div class="btn-group my-4">
+                            <button class="btn btn-primary me-3 btn-lg">Download</button>
+                        <a href="#" class="btn btn-secondary me-3 btn-lg">Click Me</a>
+                        <button class=" btn btn-outline-info w-100  btn-lg">Download</button>
+                        </div>
+                        
+
                         <div class="alert alert-success alert-dismissible me-sm-3" role="alert">
                             <button
                             class="btn-close" data-bs-dismiss="alert" aria-label="Close">
@@ -73,10 +117,207 @@
                 </div>
                 
             </div>
+<!-- ------------card section start here----------- -->
+            <div class="tutorial-section bg-light">
+                <div class="title text-center mb-3">
+                    <h3 class="fw-bold pb-4">Tuitorial</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 mb-5">
+                        <div class="card bg-secondary text-center">
+                            <img class="card-img-top" src="download (10).jpg" alt="card image">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="card-body">
+                                <h4 class="card-title">Web Design</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore excepturi obcaecati eveniet unde dolor consequatur vero labore, laudantium perferendis minus. Quo perferendis atque corrupti quia veritatis, doloribus necessitatibus quaerat eveniet!</p>
+                                <a href="https://getbootstrap.com/docs/5.3/components/accordion/" class="card-link stretched-link text-light" target="_blank">Visit my site</a>
+                            </div>
+                            <!-- <div class="card-footer">Footer</div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card text-start">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="card-body">
+                                <h4 class="card-title">Web Design</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore excepturi obcaecati eveniet unde dolor consequatur vero labore, laudantium perferendis minus. Quo perferendis atque corrupti quia veritatis, doloribus necessitatibus quaerat eveniet!</p>
+                                <a href="#" class="card-link">Visit my site</a>
+                            </div>\
+                            <img class="card-img-bottom" src="download (10).jpg" alt="card image">
+                            <!-- <div class="card-footer">Footer</div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card bg-secondary text-end">
+                            <img class="card-img-top" src="download (10).jpg" alt="card image">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="card-body">
+                                <h4 class="card-title">Web Design</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore excepturi obcaecati eveniet unde dolor consequatur vero labore, laudantium perferendis minus. Quo perferendis atque corrupti quia veritatis, doloribus necessitatibus quaerat eveniet!</p>
+                                <a href="https://getbootstrap.com/docs/5.3/components/accordion/" class="card-link stretched-link text-light" target="_blank">Visit my site</a>
+                            </div>
+                            <!-- <div class="card-footer">Footer</div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="card-body">
+                                <h4 class="card-title">Web Design</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore excepturi obcaecati eveniet unde dolor consequatur vero labore, laudantium perferendis minus. Quo perferendis atque corrupti quia veritatis, doloribus necessitatibus quaerat eveniet!</p>
+                                <a href="#" class="card-link">Visit my site</a>
+                            </div>\
+                            <img class="card-img-bottom" src="download (10).jpg" alt="card image">
+                            <!-- <div class="card-footer">Footer</div> -->
+                        </div>
+                    </div>
+                </div>
+             </div>
+<!-- -----------customer section start here--------------------- -->
+            <div class="customer-review bg-light my-5 text-center">
+                <div class="header pt-5 pb-3 fw-bold">
+                    <h3 class="fw-bold">Costomer Review</h3>
+                </div>
+                 <div class="row px-4 pb-5">
+                    <div class="col-lg-4 col-sm-12">
+                        <blockquote class="blockquote">
+                            <i class="fas fa-user-circle fa-3x rounded-circle p-2 mb-2"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima iste atque voluptas maiores odio dolorem, eveniet aliquam dicta? Molestias rerum tempore autem explicabo <abbr title="Bootstrap-5">bs5</abbr></p>
+                            <footer class="blockquote-footer ">
+                                Allis Khan in <cite>Youtube</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <blockquote class="blockquote">
+                            <i class="fas fa-user-circle fa-3x rounded-circle p-2 mb-2"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima iste atque voluptas maiores odio dolorem, eveniet aliquam dicta? Molestias rerum tempore autem explicabo <abbr title="Bootstrap-5">bs5</abbr></p>
+                            <footer class="blockquote-footer">
+                                Allis Khan in <cite>Youtube</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <blockquote class="blockquote">
+                            <i class="fas fa-user-circle fa-3x rounded-circle p-2 mb-2"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima iste atque voluptas maiores odio dolorem, eveniet aliquam dicta? Molestias rerum tempore autem explicabo <abbr title="Bootstrap-5">bs5</abbr></p>
+                            <footer class="blockquote-footer">
+                                Allis Khan in <cite>Youtube</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+<!-- ------------toggleable list section start here--------- -->
+        <div class="other-section bg-light">
+            <ul class="nav nav-tabs my-3">
+                <li class="nav-item"><a href="#education" class="nav-link active" data-bs-toggle="tab">Education</a></li>
+                <li class="nav-item"><a href="#skill" class="nav-link" data-bs-toggle="tab">Skill</a></li>
+                <li class="nav-item"><a href="#hobby" class="nav-link" data-bs-toggle="tab">Hobby</a></li>
+            </ul>
+        <div class="tab-content mb-5">
+            <div id="education" class="tab-pane active">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi id facere consequatur, libero modi temporibus, dolorum aut praesentium quisquam at quibusdam ex, minus tempore dolorem unde tenetur excepturi asperiores.</p>
+        </div>
+            <div id="skill" class="tab-pane fade">
+                <p> ipsum dolor sit amet consectetur adipisicing elit. Beatae, numquam temporibus tempore itaque suscipit est nobis veritatis illum adipisci, blanditiis quas esse delectus, deserunt quidem quae impedit voluptates aspernatur? Rerum.</p>
+            </div>
+            <div id="hobby" class="tab-pane fade">
+                <p>dolor sit amet consectetur adipisicing elit. Expedita, tempore. Delectus architecto nihil laboriosam totam modi molestias! Eum rem, fugit aliquam omnis obcaecati error voluptas. Quam fugit nihil aut obcaecati.</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- -------nav pills------------- -->
+        <div class="other-section bg-light">
+            <ul class="nav nav-pills my-3">
+                <li class="nav-item"><a href="#edu" class="nav-link active" data-bs-toggle="pill">Education</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" data-bs-toggle="pill">Skill</a></li>
+                <li class="nav-item"><a href="#hby" class="nav-link" data-bs-toggle="pill">Hobby</a></li>
+            </ul>
+        <div class="tab-content mb-5">
+            <div id="edu" class="tab-pane active">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi id facere consequatur, libero modi temporibus, dolorum aut praesentium quisquam at quibusdam ex, minus tempore dolorem unde tenetur excepturi asperiores.</p>
+        </div>
+            <div id="skills" class="tab-pane fade">
+                <p> ipsum dolor sit amet consectetur adipisicing elit. Beatae, numquam temporibus tempore itaque suscipit est nobis veritatis illum adipisci, blanditiis quas esse delectus, deserunt quidem quae impedit voluptates aspernatur? Rerum.</p>
+            </div>
+            <div id="hby" class="tab-pane fade">
+                <p>dolor sit amet consectetur adipisicing elit. Expedita, tempore. Delectus architecto nihil laboriosam totam modi molestias! Eum rem, fugit aliquam omnis obcaecati error voluptas. Quam fugit nihil aut obcaecati.</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- -------------media object----------- -->
+       <div class="media-section bg-light p-4">
+            <div class="title text-center py-3">
+                <h3 class="fw-bold">My Blogs</h3>
+            </div>
+            <div class="media border row py-3">
+               <div class="col-lg-2 col-sm-12 text-center ">
+                 <img style="width: 80px;" class="rounded-circle" src="download (6).jpg" alt="image">
+               </div>
+                <div class="media-body col-lg-10 col-sm-12">
+                    <h5>I am Laravel developer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio deserunt cum, atque libero, minus id eaque minima ipsa explicabo eius dolorum quas necessitatibus non, est maxime enim quaerat iusto repellat.</p>
+                </div>
+            </div>
+       </div>
+       <div class="media-section bg-light p-4">
+            <div class="title text-center py-3">
+                <h3 class="fw-bold">My Blogs</h3>
+            </div>
+            <div class="media border row py-3">
+              
+                <div class="media-body col-lg-10 col-sm-12">
+                    <h5>I am Laravel developer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio deserunt cum, atque libero, minus id eaque minima ipsa explicabo eius dolorum quas necessitatibus non, est maxime enim quaerat iusto repellat.</p>
+                </div>
+                 <div class="col-lg-2 col-sm-12 text-center ">
+                 <img style="width: 80px;" class="rounded-circle" src="download (6).jpg" alt="image">
+               </div>
+            </div>
+       </div>
+       <div class="media-section bg-light p-4">
+            <div class="title text-center py-3">
+                <h3 class="fw-bold">My Blogs</h3>
+            </div>
+            <div class="media border row py-3">
+               <div class="col-lg-2 col-sm-12 text-center ">
+                 <img style="width: 80px;" class="rounded-circle align-self-center" src="download (6).jpg" alt="image">
+               </div>
+                <div class="media-body col-lg-10 col-sm-12">
+                    <h5>I am Laravel developer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio deserunt cum, atque libero, minus id eaque minima ipsa explicabo eius dolorum quas necessitatibus non, est maxime enim quaerat iusto repellat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem unde iure modi earum quasi quidem animi eius culpa id dolor totam iste dolores possimus consequatur sit, libero delectus maiores necessitatibus?</p>
+                </div>
+            </div>
+       </div>
 
 
+
+
+<!-- ----------student list section------------ -->
+            <div class="student-list">
+                <ul class="list-group">
+                    <li class="list-group-item bg-primary text-white">Ananta</li>
+                    <li class="list-group-item bg-success text-white">Oishi</li>
+                    <li class="list-group-item bg-secondary text-white">Eshita</li>
+                    <a href="#" class="list-group-item list-group-item-action bg-info text-white text-center">Nishi</a>
+                </ul>
+            </div>
             
         </main>
+        <footer class="bg-dark">
+            <ul class="pagination justify-content-center py-3">
+                <li class="page-item"><a href="#" class="page-link">Prev</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
